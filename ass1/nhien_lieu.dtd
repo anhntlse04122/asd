@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+
+<!--
+    TODO define vocabulary identification data
+    PUBLIC ID  : -//vendor//vocabulary//EN
+    SYSTEM ID  : http://server/path/__NAME__
+-->
+
+<!-- TODO define your own vocabulary/syntax. Example follows:  -->
+
+<!ELEMENT rss (channel+)> 
+   <!ELEMENT channel (title,link,description,language,generator,pubDate,lastBuildDate,item+ )>
+   <!ELEMENT title (#PCDATA)>
+   <!ELEMENT link (#PCDATA)> 
+   <!ELEMENT description (#PCDATA)>
+   <!ELEMENT language (#PCDATA)>
+   <!ELEMENT generator (#PCDATA)>
+   <!ELEMENT pubDate (#PCDATA)>
+   <!ELEMENT lastBuildDate (#PCDATA)>
+   <!ELEMENT item (title ,description, link,pubDate, guid)>
+   <!ELEMENT guid (#PCDATA)>
+
+   <!ATTLIST rss version CDATA #REQUIRED> 
+   <!ATTLIST rss xmlns:atom CDATA #REQUIRED> 
+
+
+
+
